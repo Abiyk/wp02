@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+	<style>
+	body{
+	background-color:teal;
+	font-family:Arial;
+	text-align:center;
+	}
+	h1{
+	color:dark blue;
+	}
+	input{
+	padding: 8px;
+	margin:10px;
+	}
+	button{
+		padding:8px 20px;
+		background-color:darkblue;
+		color:white;
+	}
+	.custom-form{
+	border: 2px solid black;
+	padding: 20px;
+	max-width: 500px:
+	margin: 0 auto;
+	bakcgroun-color:A64A3A;
+	boder-radius:50px;
+	}
+</style>
+</head>
+<body>
+	<h1>REGISTRAION FORM</h1>
+<form class="custom-form" method="post">
+Name:<br>
+<input type="text" placeholder="Enter Name" id="name" class="name"required>
+<br>
+
+Email:<br>
+<input type="email" placeholder="Enter Email" id="email" class="email"required>
+<br>
+
+Phone Number:<br>
+<input type="text" placeholder="Enter Phone number" id="ph" class="ph"required>
+<br>
+
+Password:<br>
+<input type="text" placeholder="Enter Password"required>
+<br><br>
+
+<button type="submit">Submit</button>
+</form>
+
+<script>
+function validateForm(){
+var name = document.getElementById("name").value;
+var email = document.getElementById("email").value;
+var phone = document.getElementById("phone").value;
+var pass = document.getElementById("pass").value;
+var msg=""
+if (name =="")
+{
+msg+="enter your name";
+}
+if (email =="")
+{
+msg+="enter your email";
+}
+if (Phonenumber =="")
+{
+msg+="enter your Phone number";
+}
+if (Password =="")
+{
+msg+="enter your Password";
+}
+else
+{
+	alert("Registration Successful");
+	return true;
+}
+}
+
+
+</script>
+
+</body>
+</html>
