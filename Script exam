@@ -1,0 +1,39 @@
+<script>
+
+function Submit()
+{
+    if(document.exam.name.value == "" || document.exam.name.value == null)
+    {
+        alert("Name can't be blank");
+        return false;
+    }
+
+    if(document.exam.reg.value == "" || document.exam.reg.value == null)
+    {
+        alert("Enter register number");
+        return false;
+    }
+
+    var m = 0;
+
+    if(document.exam.q1.value == "A")
+        m = m + 1;
+
+    if(document.exam.q2.value == "A")
+        m = m + 1;
+
+    if(document.exam.q3.value == "B")
+        m = m + 1;
+
+    if(document.exam.q4.value == "A")
+        m = m + 1;
+
+    if(document.exam.q5.value == "A")
+        m = m + 1;
+
+    alert("Thank you for attending the exam. Your score is " + m + " out of 5");
+
+    return false;
+}
+
+</script>
